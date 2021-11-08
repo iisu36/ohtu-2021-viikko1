@@ -66,7 +66,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_tilavuuden_ylittaminen_varastosta_ottamisessa_toimii(self):
         self.varasto.lisaa_varastoon(5)
-        self.assertAlmostEqual(self.varasto.ota_varastosta(12), 5)
+        self.assertAlmostEqual(self.varasto.ota_varastosta(12), 8)
 
     def test_str_palauttaa_oikein(self):
         self.varasto.lisaa_varastoon(4)
